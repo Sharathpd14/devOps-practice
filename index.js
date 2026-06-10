@@ -5,7 +5,7 @@ const app = express()
 const PORT = process.env.PORT ?? 8000
 
 app.get("/",(req,res)=>{
-    return res.json({message : "Server is healthy, version 3.0"})
+    return res.json({message : "Server is healthy, version 3.0", status : "Good"})
 })
 
 app.get("/home", (req,res)=>{
